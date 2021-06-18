@@ -13,12 +13,16 @@ html, body {
     @apply bg-gray-900 w-full h-full
 }
 
-a {
+.name,.thing-title {
     text-decoration: underline 1px #616161;
     @apply transition-all
 }
 
-a:hover {
+.name:hover {
+    text-decoration: underline 1px #a6a6a6;
+}
+
+.thing-title:hover {
     text-decoration: underline 1px #a6a6a6;
 }
 
