@@ -13,7 +13,7 @@ function App() {
             <a href="https://spinny.sanity.gq/" className="thing-title">spinny</a> <span className="thing-desc"><span className="author">@en</span> diff. eq modeling of spinny spring </span>
         </div>
         <div className="thing">
-            <a href="https://spinny.sanity.gq/" className="thing-title">automata</a> <span className="thing-desc"><span className="author">@j</span> conrad's game of life + inheritance </span>
+            <a href="https://automata.sanity.gq/" className="thing-title">automata</a> <span className="thing-desc"><span className="author">@j</span> conrad's game of life + inheritance </span>
         </div>
         <div className="thing">
             <a href="https://potato.sanity.gq/" className="thing-title">potato</a> <span className="thing-desc"><span className="author">@j @z</span> znc and bitlbee instance</span>
