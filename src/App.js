@@ -17,6 +17,9 @@ function App() {
         <a href="https://potato.sanity.gq/" className="thing">
             <a  className="thing-title">potato</a> <span className="thing-desc"><span className="author">@j @z</span> znc and bitlbee instance</span>
         </a >
+        <a  href="https://ballz.sanity.gq/" className="thing">
+            <a className="thing-title">ballz</a> <span className="thing-desc"><span className="author">@en</span> some ballz that bounce with shockwaves</span>
+        </a >
         <a href="https://taproot.sanity.gq/" className="thing">
             <a  className="thing-title">taproot</a> <span className="thing-desc"><span className="author">@j @z @ex @en</span> notes! notes! get'em notes!</span>
         </a >
