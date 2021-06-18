@@ -14,11 +14,16 @@ html, body {
 }
 
 a {
-    @apply border-b border-gray-700 transition-all hover:border-gray-400 
+    text-decoration: underline 0.5px #616161;
+    @apply transition-all
+}
+
+a:hover {
+    text-decoration: underline 0.5px #a6a6a6;
 }
 
 .thing {
-    @apply flex justify-between align-middle mb-1
+    @apply flex justify-between align-middle mb-2
 }
 
 .thing-title {
@@ -27,7 +32,9 @@ a {
 
 .thing-desc {
     transform: translateY(1.5px);
-    @apply font-mono text-gray-300 text-sm font-bold 
+    max-width: 60vw;
+    text-align: right;
+    @apply font-mono text-sm font-bold text-gray-300;
 }
 
 .author {
