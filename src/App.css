@@ -14,12 +14,12 @@ html, body {
 }
 
 a {
-    text-decoration: underline 0.5px #616161;
+    text-decoration: underline 1px #616161;
     @apply transition-all
 }
 
 a:hover {
-    text-decoration: underline 0.5px #a6a6a6;
+    text-decoration: underline 1px #a6a6a6;
 }
 
 .thing {
