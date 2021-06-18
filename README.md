@@ -1,3 +1,3 @@
 # sanity
-gotta have a site, y'know?
+gotta have a site, y'know...
 
