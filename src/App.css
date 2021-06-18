@@ -1,1 +1,44 @@
+ ::-moz-selection { /* Code for Firefox */
+  background: #303030;
+}
+
+::selection {
+  background: #303030;
+}
+
+html, body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @apply bg-gray-900 w-full h-full
+}
+
+a {
+    @apply border-b border-gray-700 transition-all hover:border-gray-400 
+}
+
+.thing {
+    @apply flex justify-between align-middle mb-1
+}
+
+.thing-title {
+    @apply font-mono text-gray-100 
+}
+
+.thing-desc {
+    transform: translateY(1.5px);
+    @apply font-mono text-gray-300 text-sm font-bold 
+}
+
+.author {
+    @apply text-sm font-light border-r pr-2 border-gray-600
+}
+
+.App {
+    @apply m-5 
+}
+
+#sanity {
+    @apply text-gray-200 italic font-mono font-bold pr-2
+}
 
