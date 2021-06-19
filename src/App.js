@@ -8,6 +8,7 @@ function App() {
         <span className="flex flex-wrap mt-2 text-sm text-gray-300"><span><a href="https://github.com/zbuster05" className="mr-2 name">@zbuster05</a><a href="https://www.jemoka.com/" className="mr-2 name">@jemoka</a><a href="https://github.com/TheEnquirer/" className="mr-2 name break-here">@enquirer</a></span><span><a href="http://exr0n.com" className="mr-2 name">@exr0n</a><a href="https://richardfeynmanrocks.github.io/" className="mr-2 name">@quantumish</a></span></span>
         <br />
         <br />
+	<div className="prjs">
         <a  href="https://spinny.sanity.gq/" className="thing">
             <a className="thing-title">spinny</a> <span className="thing-desc"><span className="author">@en</span> diff. eq modeling of spinny spring </span>
         </a >
@@ -23,6 +24,7 @@ function App() {
         <a href="https://taproot.sanity.gq/" className="thing">
             <a  className="thing-title">taproot</a> <span className="thing-desc"><span className="author">@j @z @ex @en</span> notes! notes! get'em notes!</span>
         </a >
+	</div>
     </div>
   );
 }

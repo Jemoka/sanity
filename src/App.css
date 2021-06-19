@@ -46,10 +46,32 @@ html, body {
 }
 
 .App {
-    @apply m-5 
+    @apply m-5
 }
 
 #sanity {
     @apply text-gray-200 italic font-mono font-bold pr-2
 }
+
+
+
+
+
+
+
+.prjs {
+    /*animation-duration: 5s ease;*/
+    opacity: 0;
+    transform: translateY(3rem);
+    animation: fadeup 1.8s ease 0.5s forwards;
+}
+
+@keyframes fadeup {
+    to {
+	opacity: 1;
+	transform: translateY(0);
+    }
+}
+
+
 
