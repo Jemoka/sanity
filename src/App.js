@@ -9,21 +9,21 @@ function App() {
         <br />
         <br />
 	<div className="prjs">
-        <a  href="https://spinny.sanity.gq/" className="thing">
-            <a className="thing-title">spinny</a> <span className="thing-desc"><span className="author">@en</span> diff. eq modeling of spinny spring </span>
-        </a >
-        <a  href="https://automata.sanity.gq/" className="thing">
-            <a className="thing-title">automata</a> <span className="thing-desc"><span className="author">@j</span> conrad's game of life + inheritance </span>
-        </a >
-        <a href="https://potato.sanity.gq/" className="thing">
-            <a  className="thing-title">potato</a> <span className="thing-desc"><span className="author">@j @z</span> znc and bitlbee instance</span>
-        </a >
-        <a  href="https://balls.sanity.gq/" className="thing">
-            <a className="thing-title">balls</a> <span className="thing-desc"><span className="author">@en</span> some balls that bounce, weee!</span>
-        </a >
-        <a href="https://taproot.sanity.gq/" className="thing">
-            <a  className="thing-title">taproot</a> <span className="thing-desc"><span className="author">@j @z @ex @en</span> notes! notes! get'em notes!</span>
-        </a >
+	    <a  href="https://spinny.sanity.gq/" className="thing">
+		<a className="thing-title">spinny</a> <span className="thing-desc"><span className="author">@en</span> diff. eq modeling of spinny spring </span>
+	    </a >
+	    <a  href="https://automata.sanity.gq/" className="thing">
+		<a className="thing-title">automata</a> <span className="thing-desc"><span className="author">@j</span> conrad's game of life + inheritance </span>
+	    </a >
+	    <a href="https://potato.sanity.gq/" className="thing">
+		<a  className="thing-title">potato</a> <span className="thing-desc"><span className="author">@j @z</span> znc and bitlbee instance</span>
+	    </a >
+	    <a  href="https://balls.sanity.gq/" className="thing">
+		<a className="thing-title">balls</a> <span className="thing-desc"><span className="author">@en</span> some balls that bounce, weee!</span>
+	    </a >
+	    <a href="https://taproot.sanity.gq/" className="thing">
+		<a  className="thing-title">taproot</a> <span className="thing-desc"><span className="author">@j @z @ex @en</span> notes! notes! get'em notes!</span>
+	    </a >
 	</div>
     </div>
   );
