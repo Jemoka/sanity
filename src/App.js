@@ -9,6 +9,9 @@ function App() {
         <br />
         <br />
 	<div className="prjs">
+	    <a  href="https://wiki.sanity.gq/" className="thing">
+		<a className="thing-title">wiki</a> <span className="thing-desc"><span className="author">@j</span> a wiki; not quite sure why </span>
+	    </a >
 	    <a  href="https://spinny.sanity.gq/" className="thing">
 		<a className="thing-title">spinny</a> <span className="thing-desc"><span className="author">@en</span> diff. eq modeling of spinny spring </span>
 	    </a >
