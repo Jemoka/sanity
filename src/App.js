@@ -9,6 +9,9 @@ function App() {
         <br />
         <br />
 	<div className="prjs">
+	    <a href="https://dictembed.sanity.gq/" className="thing">
+		<a  className="thing-title">dictembed</a> <span className="thing-desc"><span className="author">@j @z</span> context-aware term definitions</span>
+	    </a >
 	    <a  href="https://wiki.sanity.gq/" className="thing">
 		<a className="thing-title">wiki</a> <span className="thing-desc"><span className="author">@j</span> a wiki; not quite sure why </span>
 	    </a >
