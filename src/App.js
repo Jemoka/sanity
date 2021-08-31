@@ -27,6 +27,9 @@ function App() {
 	    <a  href="https://balls.sanity.gq/" className="thing">
 		<a className="thing-title">balls</a> <span className="thing-desc"><span className="author">@en</span> some balls that bounce, weee!</span>
 	    </a >
+	    <a  href="http://meshwave.exr0n.com/" className="thing">
+		<a className="thing-title">meshwave</a> <span className="thing-desc"><span className="author">@ex</span> time synced boredem repellent v2</span>
+	    </a >
 	    <a href="https://taproot.sanity.gq/" className="thing">
 		<a  className="thing-title">taproot</a> <span className="thing-desc"><span className="author">@j @z @ex @en</span> notes! notes! get'em notes!</span>
 	    </a >
