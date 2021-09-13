@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Sanity",
+  "name": "Sanity.gq | friends building cool things",
   "icons": [
     {
       "src": "logo192.png",
@@ -26,5 +26,5 @@
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "background_color": "rgba(17, 24, 39, 1)"
 }
