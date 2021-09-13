@@ -16,7 +16,7 @@ function App() {
         { link: "https://automata.sanity.gq/", title: "automata", authors: [ "@j" ], desc: "conrad's game of life + inheritance" },
         { link: "https://potato.sanity.gq/", title: "potato", authors: [ "@j", "@z" ], desc: "znc and bitlbee instance" },
         { link: "https://balls.sanity.gq/", title: "balls", authors: [ "@en" ], desc: "some balls that bounce, wheee!" },
-        { link: "https://taproot.sanity.gq/", title: "taproot", authors: [ "@j @en @ex @z" ], desc: "shared zettelkasten" },
+        { link: "https://taproot3.sanity.gq/", title: "taproot", authors: [ "@j @en @ex @z" ], desc: "shared zettelkasten" },
     ];
 
     return (
