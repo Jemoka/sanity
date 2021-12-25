@@ -20,6 +20,7 @@ html, body {
 
 .name:hover {
     text-decoration: underline 1px #a6a6a6;
+    color: var(--hcolor);
 }
 
 .thing-title:hover {
@@ -35,7 +36,7 @@ html, body {
 }
 
 .thing-desc {
-    transform: translateY(1.5px);
+    /*transform: translateY(1.5px);*/
     max-width: 60vw;
     text-align: right;
     @apply font-mono text-sm font-bold text-gray-300;
@@ -49,6 +50,12 @@ html, body {
     @apply m-5
 }
 
+#blurb {
+    animation-name: fadeup;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
 #sanity {
     @apply text-gray-200 italic font-mono font-bold pr-2
 }
@@ -60,12 +67,22 @@ html, body {
     /*animation: fadeup 1.8s ease 0.5s forwards;*/
 }
 
-@keyframes fadeup {
-    to {
-	opacity: 1;
-	transform: translateY(0);
-    }
+.thing-wrap {
+    animation-delay: calc(var(--anim-order)*100ms + 500ms);
+    animation-name: fadeup;
+    animation-duration: 1s;
+    animation-fill-mode: both;
 }
 
+@keyframes fadeup {
+    from {
+        opacity: 0;
+        transform: translateY(1rem);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
 
