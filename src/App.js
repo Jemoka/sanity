@@ -27,6 +27,9 @@ function App() {
 	    <a  href="https://balls.sanity.gq/" className="thing">
 		<a className="thing-title">balls</a> <span className="thing-desc"><span className="author">@en</span> some balls that bounce, weee!</span>
 	    </a >
+	    <a  href="https://lilypads.sanity.gq/" className="thing">
+		<a className="thing-title">lilypads</a> <span className="thing-desc"><span className="author">@en @ex</span> nothing byeond some three.js art </span>
+	    </a >
 	    <a href="https://taproot.sanity.gq/" className="thing">
 		<a  className="thing-title">taproot</a> <span className="thing-desc"><span className="author">@j @z @ex @en</span> notes! notes! get'em notes!</span>
 	    </a >
