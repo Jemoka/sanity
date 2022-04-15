@@ -18,6 +18,7 @@ function App() {
         { link: "https://balls.sanity.gq/", title: "balls", authors: [ "@en" ], desc: "some balls that bounce, wheee!" },
         { link: "https://lilypads.sanity.gq/", title: "lilypads", authors: [ "@en @ex" ], desc: "just some three.js art" },
         { link: "https://taproot3.sanity.gq/", title: "taproot", authors: [ "@j @en @ex @z" ], desc: "shared zettelkasten" },
+        { link: "https://poems.jklsnt.com/", titlle: "pomes", authors: ["@en @z"], desc: "a whole lotta fruit"}
     ];
 
     return (
