@@ -28,29 +28,30 @@ const ARXIVED_PROJECTS = [
 function App() {
     const [ showHidden, setShowHidden ] = useState(false);
     const [ friendsOrdering, setFriendsOrdering ] = useState( FRIENDS.map(f => ({ ...f, order: Math.random() })) );
-    //setTimeout(() => { setShowHidden(true); }, 5*1000);
 
     console.log(showHidden)
 
     // add scroll listener to show archived projects on scroll-down https://stackoverflow.com/a/61018017
     useEffect(() => {
-        const onScroll = e => { console.log('scrolled', e); }
-        //window.addEventListener('scroll', onScroll, { passive: true [> hints that we wont call preventDefault to help performance <] });
-        window.addEventListener('scroll', onScroll);
-        console.log('added event listener scroll')
-        return () => window.removeEventListener('scroll', onScroll);
+        const wheelEvent = e => {
+            if (e.deltaY > 0) {
+                window.removeEventListener('wheel', wheelEvent);
+                setShowHidden(true);
+            }
+        }
+        window.addEventListener('wheel', wheelEvent);
+        return () => window.removeEventListener('wheel', wheelEvent);
     }, []);
 
     return (
-    <div className="m-5" onScroll={ console.log }>
+    <div className="m-5">
         <div style={{ animationName: 'fadeup', animationDuration: "1s", animationFillMode: 'both' }} className="my-12">
             <span className="pr-2 font-mono italic font-bold text-gray-200" id="sanity">Sanity</span>
             <span className="font-mono text-gray-200">is a group of friends building cool things.</span>
             <br />
             <span className="flex flex-wrap mt-2 text-sm text-gray-300 space-x-2">
                 {
-                    //FRIENDS.sort(f => f.order)
-                    FRIENDS.sort(f => Math.random() - 0.5)
+                    FRIENDS.sort(f => f.order)
                     .map(({ name, url, color }, idx) =>
                     <a href={url} className="name" style={{"--hcolor": color}} key={idx}>@{name}</a>
                 ) }
