@@ -56,16 +56,16 @@ html, body {
     animation-fill-mode: both;
 }
 
-#sanity {
-    @apply text-gray-200 italic font-mono font-bold pr-2
-}
+/*#sanity {*/
+/*    @apply text-gray-200 italic font-mono font-bold pr-2*/
+/*}*/
 
-.prjs {
-    /*animation-duration: 5s ease;*/
-    opacity: 1;
-    /*transform: translateY(3rem);*/
-    /*animation: fadeup 1.8s ease 0.5s forwards;*/
-}
+/*.prjs {*/
+/*    [>animation-duration: 5s ease;<]*/
+/*    [>opacity: 1;<]*/
+/*    [>transform: translateY(3rem);<]*/
+/*    [>animation: fadeup 1.8s ease 0.5s forwards;<]*/
+/*}*/
 
 .thing-wrap {
     animation-delay: calc(var(--anim-order)*100ms + 500ms);
