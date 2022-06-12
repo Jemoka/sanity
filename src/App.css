@@ -31,30 +31,30 @@ html, body {
     @apply flex justify-between align-middle mb-2
 }
 
-.thing-title {
-    @apply font-mono text-gray-100 
-}
+/*.thing-title {*/
+/*    @apply font-mono text-gray-100 */
+/*}*/
 
-.thing-desc {
-    /*transform: translateY(1.5px);*/
-    max-width: 60vw;
-    text-align: right;
-    @apply font-mono text-sm font-bold text-gray-300;
-}
+/*.thing-desc {*/
+/*    transform: translateY(1.5px);*/
+/*    max-width: 60vw;*/
+/*    text-align: right;*/
+/*    @apply font-mono text-sm font-bold text-gray-300;*/
+/*}*/
 
-.author {
-    @apply text-sm font-light border-r pr-2 border-gray-600
-}
+/*.author {*/
+/*    @apply text-sm font-light border-r pr-2 border-gray-600*/
+/*}*/
 
-.App {
-    @apply m-5
-}
+/*.App {*/
+/*    @apply m-5*/
+/*}*/
 
-#blurb {
-    animation-name: fadeup;
-    animation-duration: 1s;
-    animation-fill-mode: both;
-}
+/*#blurb {*/
+/*    animation-name: fadeup;*/
+/*    animation-duration: 1s;*/
+/*    animation-fill-mode: both;*/
+/*}*/
 
 /*#sanity {*/
 /*    @apply text-gray-200 italic font-mono font-bold pr-2*/

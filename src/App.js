@@ -42,9 +42,10 @@ function App() {
     }, []);
 
     return (
-    <div className="App" onScroll={ console.log }>
-        <div id="blurb" className="my-12">
-            <span className="text-gray-200 italic font-mono font-bold pr-2" id="sanity">Sanity</span><span className="font-mono text-gray-200">is a group of friends building cool things.</span>
+    <div className="m-5" onScroll={ console.log }>
+        <div style={{ animationName: 'fadeup', animationDuration: "1s", animationFillMode: 'both' }} className="my-12">
+            <span className="pr-2 font-mono italic font-bold text-gray-200" id="sanity">Sanity</span>
+            <span className="font-mono text-gray-200">is a group of friends building cool things.</span>
             <br />
             <span className="flex flex-wrap mt-2 text-sm text-gray-300 space-x-2">
                 {
