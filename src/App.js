@@ -12,19 +12,19 @@ const FRIENDS = [
     { url: "https://richardfeynmanrocks.github.io/", name: "quantumish", color: "#6cad50" }
 ]
 const FEATURED_PROJECTS = [
-    { link: "https://dictembed.sanity.gq/", title: "dictembed", authors: [ "@j", "@z" ], desc: "context-aware term definitions" },
-    { link: "https://automata.sanity.gq/", title: "automata", authors: [ "@j" ], desc: "conrad's game of life + inheritance" },
-    { link: "https://taproot3.sanity.gq/", title: "taproot", authors: [ "@j @en @ex @z" ], desc: "shared zettelkasten" },
+    { link: "https://dictembed.jklsnt.com/", title: "dictembed", authors: [ "@j", "@z" ], desc: "context-aware term definitions" },
+    { link: "https://automata.jklsnt.com/", title: "automata", authors: [ "@j" ], desc: "conrad's game of life + inheritance" },
+    { link: "https://taproot3.jklsnt.com/", title: "taproot", authors: [ "@j @en @ex @z" ], desc: "shared zettelkasten" },
     { link: "https://poems.jklsnt.com/", title: "pomes", authors: ["@en @z"], desc: "a whole lotta fruit"},
     { link: "https://urbanmap.exr0n.com/", title: "urbanmap", authors: ["@ex"], desc: "walkability in the US"}
 ];
 const ARXIVED_PROJECTS = [
     { link: "http://meshwave.exr0n.com/", title: "meshwave", authors: [ "@ex" ], desc: "time synced boredem repellent v2" },
-    { link: "https://wiki.sanity.gq", title: "wiki", authors: [ "@j" ], desc: "a wiki; not quite sure why" },
-    { link: "https://spinny.sanity.gq/", title: "spinny", authors: [ "@en" ], desc: "diff. eq modeling of spinny spring" },
-    { link: "https://potato.sanity.gq/", title: "potato", authors: [ "@j", "@z" ], desc: "znc and bitlbee instance" },
-    { link: "https://balls.sanity.gq/", title: "balls", authors: [ "@en" ], desc: "some balls that bounce, wheee!" },
-    { link: "https://lilypads.sanity.gq/", title: "lilypads", authors: [ "@en @ex" ], desc: "just some three.js art" },
+    { link: "https://wiki.jklsnt.com", title: "wiki", authors: [ "@j" ], desc: "a wiki; not quite sure why" },
+    { link: "https://spinny.jklsnt.com/", title: "spinny", authors: [ "@en" ], desc: "diff. eq modeling of spinny spring" },
+    { link: "https://potato.jklsnt.com/", title: "potato", authors: [ "@j", "@z" ], desc: "znc and bitlbee instance" },
+    { link: "https://balls.jklsnt.com/", title: "balls", authors: [ "@en" ], desc: "some balls that bounce, wheee!" },
+    { link: "https://lilypads.jklsnt.com/", title: "lilypads", authors: [ "@en @ex" ], desc: "just some three.js art" },
 ]
 
 function App() {
@@ -71,12 +71,6 @@ function App() {
             <ProjectList projects={ARXIVED_PROJECTS} />
             </div> : scrollDownArrow
         }
-        {/*
-        <div style={{display: showHidden ? 'block' : 'none'}}>
-            <br/><span className="font-mono font-bold text-gray-200" style={{animationName: 'fadeup', '--anim-order': 0, animationDuration: '1s', AnimationFillMode: 'both'}}>Older projects:</span>
-            <ProjectList projects={ARXIVED_PROJECTS} />
-        </div>
-        */}
     </div>
     );
 }
