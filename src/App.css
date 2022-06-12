@@ -31,42 +31,6 @@ html, body {
     @apply flex justify-between align-middle mb-2
 }
 
-/*.thing-title {*/
-/*    @apply font-mono text-gray-100 */
-/*}*/
-
-/*.thing-desc {*/
-/*    transform: translateY(1.5px);*/
-/*    max-width: 60vw;*/
-/*    text-align: right;*/
-/*    @apply font-mono text-sm font-bold text-gray-300;*/
-/*}*/
-
-/*.author {*/
-/*    @apply text-sm font-light border-r pr-2 border-gray-600*/
-/*}*/
-
-/*.App {*/
-/*    @apply m-5*/
-/*}*/
-
-/*#blurb {*/
-/*    animation-name: fadeup;*/
-/*    animation-duration: 1s;*/
-/*    animation-fill-mode: both;*/
-/*}*/
-
-/*#sanity {*/
-/*    @apply text-gray-200 italic font-mono font-bold pr-2*/
-/*}*/
-
-/*.prjs {*/
-/*    [>animation-duration: 5s ease;<]*/
-/*    [>opacity: 1;<]*/
-/*    [>transform: translateY(3rem);<]*/
-/*    [>animation: fadeup 1.8s ease 0.5s forwards;<]*/
-/*}*/
-
 .thing-wrap {
     animation-delay: calc(var(--anim-order)*100ms + 500ms);
     animation-name: fadeup;
@@ -85,4 +49,12 @@ html, body {
     }
 }
 
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+    }
+    25%, 75% {
+        opacity: 0;
+    }
+}
 

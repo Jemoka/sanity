@@ -1,6 +1,8 @@
 import './App.css';
 import ProjectList from './ProjectList.jsx';
 import { useState, useEffect } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faAngleDown } from '@fortawesome/free-solid-svg-icons';
 
 const FRIENDS = [
     { url: "https://github.com/zbuster05", name: "zbuster05", color: "rgb(190, 52, 37)" },
@@ -29,7 +31,13 @@ function App() {
     const [ showHidden, setShowHidden ] = useState(false);
     const [ friendsOrdering, setFriendsOrdering ] = useState( FRIENDS.map(f => ({ ...f, order: Math.random() })) );
 
-    console.log(showHidden)
+    // state to keep track of which scroll arrow we are showing: the incoming animation one or the pulse animation one
+    const [ featuredProjectsLoaded, setFeaturedProjectsLoaded ] = useState(false);
+    setTimeout(() => setFeaturedProjectsLoaded(true), 2000 + 100*FEATURED_PROJECTS.length);
+    const scrollDownArrow = (() => {
+        if (featuredProjectsLoaded) return <div className="text-xl text-center text-gray-500" style={{animationName: 'pulse', animationDuration: '5s', animationIterationCount: 'infinite'}}><FontAwesomeIcon icon={faAngleDown} /> </div>
+        return <div className="text-xl text-center text-gray-500" style={{animationName: 'fadeup', animationDelay: `${500 + 100 * FEATURED_PROJECTS.length}ms`, animationFillMode: 'both', animationDuration: '1s'}}><FontAwesomeIcon icon={faAngleDown} /> </div>
+    })();
 
     // add scroll listener to show archived projects on scroll-down https://stackoverflow.com/a/61018017
     useEffect(() => {
@@ -58,9 +66,17 @@ function App() {
             </span>
         </div>
         <ProjectList projects={FEATURED_PROJECTS} />
+        { showHidden? <div>
+            <br/><span className="font-mono font-bold text-gray-200" style={{animationName: 'fadeup', '--anim-order': 0, animationDuration: '1s', animationFillMode: 'both'}}>Older projects:</span>
+            <ProjectList projects={ARXIVED_PROJECTS} />
+            </div> : scrollDownArrow
+        }
+        {/*
         <div style={{display: showHidden ? 'block' : 'none'}}>
+            <br/><span className="font-mono font-bold text-gray-200" style={{animationName: 'fadeup', '--anim-order': 0, animationDuration: '1s', AnimationFillMode: 'both'}}>Older projects:</span>
             <ProjectList projects={ARXIVED_PROJECTS} />
         </div>
+        */}
     </div>
     );
 }
