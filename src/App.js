@@ -19,6 +19,7 @@ function App() {
         { link: "https://lilypads.sanity.gq/", title: "lilypads", authors: [ "@en @ex" ], desc: "just some three.js art" },
         { link: "https://taproot3.sanity.gq/", title: "taproot", authors: [ "@j @en @ex @z" ], desc: "shared zettelkasten" },
         { link: "https://poems.jklsnt.com/", title: "pomes", authors: ["@en @z"], desc: "a whole lotta fruit"}
+        { link: "https://urbanmap.exr0n.com/", title: "urbanmap", authors: ["@ex"], desc: "walkability in the US"}
     ];
 
     return (
