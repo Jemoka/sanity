@@ -12,7 +12,6 @@ const FRIENDS = [
     { url: "https://richardfeynmanrocks.github.io/", name: "quantumish", color: "#6cad50" }
 ]
 const FEATURED_PROJECTS = [
-    { link: "https://dictembed.jklsnt.com/", title: "dictembed", authors: [ "@j", "@z" ], desc: "context-aware term definitions" },
     { link: "https://automata.jklsnt.com/", title: "automata", authors: [ "@j" ], desc: "conrad's game of life + inheritance" },
     { link: "https://taproot3.jklsnt.com/", title: "taproot", authors: [ "@j @en @ex @z" ], desc: "shared zettelkasten" },
     { link: "https://poems.jklsnt.com/", title: "pomes", authors: ["@en @z"], desc: "a whole lotta fruit"},
@@ -25,6 +24,7 @@ const ARXIVED_PROJECTS = [
     { link: "https://potato.jklsnt.com/", title: "potato", authors: [ "@j", "@z" ], desc: "znc and bitlbee instance" },
     { link: "https://balls.jklsnt.com/", title: "balls", authors: [ "@en" ], desc: "some balls that bounce, wheee!" },
     { link: "https://lilypads.jklsnt.com/", title: "lilypads", authors: [ "@en @ex" ], desc: "just some three.js art" },
+    { link: "https://doi.org/10.1007/978-3-031-10464-0_41/", title: "dictembed", authors: [ "@j", "@z" ], desc: "context-aware term definitions" },
 ]
 
 function App() {
