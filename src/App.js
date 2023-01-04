@@ -15,7 +15,8 @@ const FEATURED_PROJECTS = [
     { link: "https://automata.jklsnt.com/", title: "automata", authors: [ "@j" ], desc: "conrad's game of life + inheritance" },
     { link: "https://taproot3.jklsnt.com/", title: "taproot", authors: [ "@j @en @ex @z" ], desc: "shared zettelkasten" },
     { link: "https://poems.jklsnt.com/", title: "pomes", authors: ["@en @z"], desc: "a whole lotta fruit"},
-    { link: "https://urbanmap.exr0n.com/", title: "urbanmap", authors: ["@ex"], desc: "walkability in the US"}
+    { link: "https://urbanmap.exr0n.com/", title: "urbanmap", authors: ["@ex"], desc: "walkability in the US"},
+    { link: "http://exchange.jklsnt.com/", title: "exchange", authors: ["@q"], desc: "limit order book simulation"},
 ];
 const ARXIVED_PROJECTS = [
     { link: "http://meshwave.exr0n.com/", title: "meshwave", authors: [ "@ex" ], desc: "time synced boredem repellent v2" },
