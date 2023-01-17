@@ -1,6 +1,6 @@
 import './App.css';
 import ProjectList from './ProjectList.jsx';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleDown } from '@fortawesome/free-solid-svg-icons';
 
@@ -30,7 +30,11 @@ const ARXIVED_PROJECTS = [
 
 function App() {
     const [ showHidden, setShowHidden ] = useState(false);
-    const [ friendsOrdering, setFriendsOrdering ] = useState( FRIENDS.map(f => ({ ...f, order: Math.random() })) );
+    const [ friends_ordered, setFriendsOrdered ] = useState((() => {
+        const f = FRIENDS.map(f => ({ ...f, order: Math.random() }));
+        f.sort((a, b) => b.order - a.order);
+        return f;
+    })());
 
     // state to keep track of which scroll arrow we are showing: the incoming animation one or the pulse animation one
     const [ featuredProjectsLoaded, setFeaturedProjectsLoaded ] = useState(false);
@@ -60,9 +64,8 @@ function App() {
             <br />
             <span className="flex flex-wrap mt-2 text-sm text-gray-300 space-x-2">
                 {
-                    FRIENDS.sort(f => f.order)
-                    .map(({ name, url, color }, idx) =>
-                    <a href={url} className="name" style={{"--hcolor": color}} key={idx}>@{name}</a>
+                    friends_ordered.map(({ name, url, color }, idx) =>
+                        <a href={url} className="name" style={{"--hcolor": color}} key={idx}>@{name}</a>
                 ) }
             </span>
         </div>
