@@ -40,8 +40,15 @@ function App() {
     const [ featuredProjectsLoaded, setFeaturedProjectsLoaded ] = useState(false);
     setTimeout(() => setFeaturedProjectsLoaded(true), 2000 + 100*FEATURED_PROJECTS.length);
     const scrollDownArrow = (() => {
-        if (featuredProjectsLoaded) return <div className="text-xl text-center text-gray-500" style={{animationName: 'pulse', animationDuration: '3s', animationIterationCount: 'infinite'}}><FontAwesomeIcon icon={faAngleDown} /> </div>
-        return <div className="text-xl text-center text-gray-500" style={{animationName: 'fadeup', animationDelay: `${500 + 100 * FEATURED_PROJECTS.length}ms`, animationFillMode: 'both', animationDuration: '1s'}}><FontAwesomeIcon icon={faAngleDown} /> </div>
+        return <div className="text-xl text-center text-gray-500" style={
+            featuredProjectsLoaded?
+            {animationName: 'fadeup', animationDelay: `${500 + 100 * FEATURED_PROJECTS.length}ms`, animationFillMode: 'both', animationDuration: '1s'} :
+            {animationName: 'pulse', animationDuration: '3s', animationIterationCount: 'infinite'}
+        }><FontAwesomeIcon icon={faAngleDown} onClick={() => { setShowHidden(true) }} /> </div>
+
+        // if (featuredProjectsLoaded)
+            // return <div className="text-xl text-center text-gray-500" style={{animationName: 'pulse', animationDuration: '3s', animationIterationCount: 'infinite'}}><FontAwesomeIcon icon={faAngleDown} /> </div>
+        // return <div className="text-xl text-center text-gray-500" style={{animationName: 'fadeup', animationDelay: `${500 + 100 * FEATURED_PROJECTS.length}ms`, animationFillMode: 'both', animationDuration: '1s'}}><FontAwesomeIcon icon={faAngleDown} /> </div>
     })();
 
     // add scroll listener to show archived projects on scroll-down https://stackoverflow.com/a/61018017
