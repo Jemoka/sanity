@@ -42,8 +42,8 @@ function App() {
     const scrollDownArrow = (() => {
         return <div className="text-xl text-center text-gray-500" style={
             featuredProjectsLoaded?
-            {animationName: 'fadeup', animationDelay: `${500 + 100 * FEATURED_PROJECTS.length}ms`, animationFillMode: 'both', animationDuration: '1s'} :
-            {animationName: 'pulse', animationDuration: '3s', animationIterationCount: 'infinite'}
+            {animationName: 'pulse', animationDuration: '3s', animationIterationCount: 'infinite'}:
+            {animationName: 'fadeup', animationDelay: `${500 + 100 * FEATURED_PROJECTS.length}ms`, animationFillMode: 'both', animationDuration: '1s'} 
         }><FontAwesomeIcon icon={faAngleDown} onClick={() => { setShowHidden(true) }} /> </div>
 
         // if (featuredProjectsLoaded)
