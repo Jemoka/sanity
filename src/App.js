@@ -9,23 +9,24 @@ const FRIENDS = [
     { url: "https://www.jemoka.com/", name: "jemoka", color: "#eaebab" },
     { url: "https://github.com/TheEnquirer/", name: "enquirer", color: "#fbec22" },
     { url: "http://exr0n.com", name: "exr0n", color: "#326ccc" },
-    { url: "https://richardfeynmanrocks.github.io/", name: "quantumish", color: "#6cad50" }
+    { url: "https://quantumish.github.io/", name: "quantumish", color: "#6cad50" }
 ]
 const FEATURED_PROJECTS = [
     { link: "https://automata.jklsnt.com/", title: "automata", authors: [ "@j" ], desc: "conrad's game of life + inheritance" },
     { link: "https://taproot3.jklsnt.com/", title: "taproot", authors: [ "@j @en @ex @z" ], desc: "shared zettelkasten" },
-    { link: "https://poems.jklsnt.com/", title: "pomes", authors: ["@en @z"], desc: "a whole lotta fruit"},
     { link: "https://urbanmap.exr0n.com/", title: "urbanmap", authors: ["@ex"], desc: "walkability in the US"},
     { link: "http://exchange.jklsnt.com/", title: "exchange", authors: ["@q"], desc: "limit order book simulation"},
+    { link: "http://evolutionary.jklsnt.com/", title: "evolutionary", authors: ["@j"], desc: "experiments in particle evolution"},
+    { link: "https://doi.org/10.1007/978-3-031-10464-0_41", title: "dictembed", authors: [ "@j", "@z" ], desc: "context-aware term definitions" },
 ];
 const ARXIVED_PROJECTS = [
     { link: "http://meshwave.exr0n.com/", title: "meshwave", authors: [ "@ex" ], desc: "time synced boredem repellent v2" },
     { link: "https://wiki.jklsnt.com", title: "wiki", authors: [ "@j" ], desc: "a wiki; not quite sure why" },
+    { link: "https://poems.jklsnt.com/", title: "pomes", authors: ["@en @z"], desc: "a whole lotta fruit"},
     { link: "https://spinny.jklsnt.com/", title: "spinny", authors: [ "@en" ], desc: "diff. eq modeling of spinny spring" },
     { link: "https://potato.jklsnt.com/", title: "potato", authors: [ "@j", "@z" ], desc: "znc and bitlbee instance" },
     { link: "https://balls.jklsnt.com/", title: "balls", authors: [ "@en" ], desc: "some balls that bounce, wheee!" },
     { link: "https://lilypads.jklsnt.com/", title: "lilypads", authors: [ "@en @ex" ], desc: "just some three.js art" },
-    { link: "https://doi.org/10.1007/978-3-031-10464-0_41", title: "dictembed", authors: [ "@j", "@z" ], desc: "context-aware term definitions" },
 ]
 
 function App() {
