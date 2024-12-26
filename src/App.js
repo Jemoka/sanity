@@ -9,7 +9,7 @@ const FRIENDS = [
     { url: "https://www.jemoka.com/", name: "jemoka", color: "#eaebab" },
     { url: "https://github.com/TheEnquirer/", name: "enquirer", color: "#fbec22" },
     { url: "http://exr0n.com", name: "exr0n", color: "#326ccc" },
-    { url: "https://quantumish.github.io/", name: "quantumish", color: "#6cad50" }
+    { url: "https://quantumi.sh/", name: "quantumish", color: "#6cad50" }
 ]
 const FEATURED_PROJECTS = [
     { link: "https://automata.jklsnt.com/", title: "automata", authors: [ "@j" ], desc: "conway's game of life + inheritance" },
